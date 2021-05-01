@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui">
+
+<ui:composition template="_template.xhtml">
+	<ui:define name="content">
+		<h:form>
+			<div class="card" style="padding-top: 30px">
+				<p:dataTable value="#{registerBean.registers}" var="register">
+					<p:column headerText="Name">
+						<h:outputText value="#{register.nome}" />
+					</p:column>
+					<p:column headerText="Email">
+						<h:outputText value="#{register.email}" />
+					</p:column>
+					<p:column headerText="Age">
+						<h:outputText value="#{register.dataNascimento}" />
+					</p:column>
+					<p:column headerText="Address">
+						<h:outputText value="#{register.endereco}" />
+					</p:column>
+				</p:dataTable>
+			</div>
+		</h:form>
+	</ui:define>
+</ui:composition>
+
+	
+
+
+</html>
