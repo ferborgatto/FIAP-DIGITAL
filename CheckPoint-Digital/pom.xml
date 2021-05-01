@@ -8,7 +8,7 @@
 	<version>1.0.0-SNAPSHOT</version>
 	<packaging>war</packaging>
 	<build>
-		<finalName>progamer</finalName>
+		<finalName>checkpointDigital</finalName>
 	</build>
 	<properties>
 		<failOnMissingWebXml>false</failOnMissingWebXml>
